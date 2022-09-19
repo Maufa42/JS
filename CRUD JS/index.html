@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+
+  <title>Document</title>
+</head>
+<body>
+  <table>
+        <tr>
+                  <td>
+                    <!-- html for crud operation -->
+                        <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                          <div>
+                            <label>Fullname</label>
+                            <input type = "text" name = "fullName" id  = "fullName">
+                          </div>
+
+                          <div>
+                            <label>PhoneNumber</label>
+                            <input type = "number" name = "phonenumber" id  = "phonenumber">
+                          </div>
+
+                          <div>
+                            <label>City</label>
+                            <input type = "text" name = "city" id  = "city">
+                          </div>
+
+                          <div>
+                            <label>Salary</label>
+                            <input type = "number" name = "salary" id  = "salary">
+                          </div>
+
+                          <div>
+                            <input type = "submit" value = "Submit">
+                            <input type = "Reset" onsubmit="resetForm();" value = "Reset">
+
+                          </div>
+                        </form>
+                  </td>
+                  <td>
+                          <!-- table for list operation -->
+                          <table class="list" id = "employeeList">
+                            <thead>
+                              <tr>
+                                <th>Full name</th>
+                                <th>Phone Number</th>
+                                <th>Salary</th>
+                                <th>City</th>
+                                <th>Action</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+
+                            </tbody>
+                          </table>
+                  </td>
+        </tr>
+  </table>
+
+</body>
+<script src= "main.js"></script>
+</html>

@@ -1,0 +1,12 @@
+.button{
+  padding: 20px;
+}
+
+.flex {
+  display: flex;
+}
+.flex-col {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
